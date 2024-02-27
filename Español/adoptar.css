@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #d3def4;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    position: fixed;
+    gap: 380px;
+    border-bottom: 2px solid #8c7d72;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    align-items: center;
+}
+
+.boton{
+    height: 37.6px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.boton:hover{
+    overflow: visible;
+}
+
+button{
+    padding: 10px;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #efedeb;
+}
+
+menu{
+    cursor:pointer;
+    display: block;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+}
+
+.menu:focus{
+    display: block;
+}
+
+.lineas{
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin-top: 2px;
+}
+
+.menuItem{
+   text-align: center; 
+   border: 1px solid #8c7d72;
+}
+
+.cabecera{
+    display: flex;
+}
+
+#img1{
+    margin-top: 6px;
+    width: 70px;
+    height: 70px;
+}
+
+.menuItem a{
+    color: #705c50;
+    font-size: large;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+nav{
+    border: 1px solid #8c7d72;
+    border-radius: 5px;
+    background-color: #efedeb;
+}
+
+nav a{
+    float: right;
+    padding: 6px;
+    color: #705c50;
+    font-size: large;
+    text-decoration: none;
+}
+
+.titulo{
+    margin-top: 110px;
+    margin-left: 200px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    top: 180px;
+    width: 100%;
+    background-color: #d5d0d0;
+}
+
+.imagen{
+    cursor: pointer;
+    width: 200px;
+    height: 250px;
+}
+
+.imagen img{
+    display: inline-block;
+    width: 200px; 
+    height: 250px;
+}
+
+.hover-content{
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 950px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.hover-content span{
+    text-align: center;
+    margin: 0;
+    padding: 2px 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hover-content p{
+    width: 400px;
+}
+
+.imagen:hover .hover-content {
+    display: block;
+}
+
+.contenedorImagen:hover{
+    display: none;
+}
+
+.seccion-con-fondo {
+    margin-top: 50px;
+    height: 400px; 
+    background: url('/img/canarionejos.jpg') center/cover no-repeat;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #5120f3;
+}
+
+.seccion-con-fondo::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.seccion-con-fondo h1, .seccion-con-fondo p{
+    z-index: 1;
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 50px;
+}
+
+hr{
+    border: #8c7d72;
+    background-color: #8c7d72;
+    height: 1px;
+    width: 95%;
+    margin-top: 50px;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 150px 350px 800px;
+    gap: 60px;
+    margin: 40px;
+}
+
+footer{
+    background-color: white;
+    display: flex;
+    gap: 510px;
+    border-top: 2px solid #8c7d72;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.divFooter1{
+    border: 1px solid #8c7d72;
+    border-radius: 5px;
+    margin-left:20px;
+    background-color: #efedeb;
+}
+    
+.divFooter1 a{
+        padding: 6px;
+        color: #705c50;
+        font-size: large;
+        text-decoration: none;
+}

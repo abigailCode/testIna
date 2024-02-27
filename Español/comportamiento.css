@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #ebd9d1;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    position: fixed;
+    gap: 380px;
+    border-bottom: 2px solid #8c7d72;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    align-items: center;
+}
+
+.boton{
+    height: 37.6px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.boton:hover{
+    overflow: visible;
+}
+
+button{
+    padding: 10px;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #efedeb;
+}
+
+menu{
+    cursor:pointer;
+    display: block;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+}
+
+.menu:focus{
+    display: block;
+}
+
+.lineas{
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin-top: 2px;
+}
+
+.menuItem{
+   text-align: center; 
+   border: 1px solid #8c7d72;
+}
+
+.cabecera{
+    display: flex;
+}
+
+#img1{
+    margin-top: 6px;
+    width: 70px;
+    height: 70px;
+}    
+
+.menuItem a{
+    color: #705c50;
+    font-size: large;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+nav{
+    border: 1px solid #8c7d72;
+    border-radius: 5px;
+    background-color: #efedeb;
+}
+
+nav a{
+    float: right;
+    padding: 6px;
+    color: #705c50;
+    font-size: large;
+    text-decoration: none;
+}
+
+main{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+main>*{
+    width: 80%;
+    text-align: center;
+}
+
+main img{
+    width: 300px;
+    height: 300px;
+}
+
+section{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 900px auto;
+    margin-top: 20px;
+    margin-left: 120px;
+    border-top: 1px solid #8c7d72;
+}
+
+section div{
+    margin-top: 20px;
+}
+
+section div img{
+    width: 200px;
+    height: 200px;
+}
+
+ main img, section img{
+    border: 1px solid #8c7d72;
+    border-radius: 15px;
+}
+
+footer{
+    background-color: white;
+    display: flex;
+    gap: 510px;
+    border-top: 2px solid #8c7d72;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.divFooter1{
+    border: 1px solid #8c7d72;
+    border-radius: 5px;
+    margin-left:20px;
+    background-color: #efedeb;
+}
+    
+.divFooter1 a{
+        padding: 6px;
+        color: #705c50;
+        font-size: large;
+        text-decoration: none;
+}

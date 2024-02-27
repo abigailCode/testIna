@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #a4baa6;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    position: fixed;
+    gap: 380px;
+    border-bottom: 2px solid #8c7d72;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    align-items: center;
+}
+
+.boton{
+    height: 37.6px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.boton:hover{
+    overflow: visible;
+}
+
+button{
+    padding: 10px;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #efedeb;
+}
+
+menu{
+    cursor:pointer;
+    display: block;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+}
+
+.menu:focus{
+    display: block;
+}
+
+.lineas{
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin-top: 2px;
+}
+
+.menuItem{
+   text-align: center; 
+   border: 1px solid #8c7d72;
+}
+
+.cabecera{
+    display: flex;
+}
+
+#img1{
+    margin-top: 6px;
+    width: 70px;
+    height: 70px;
+}
+
+.menuItem a{
+    color: #705c50;
+    font-size: large;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+nav{
+    border: 1px solid #8c7d72;
+    border-radius: 5px;
+    background-color: #efedeb;
+}
+
+nav a{
+    float: right;
+    padding: 6px;
+    color: #705c50;
+    font-size: large;
+    text-decoration: none;
+}
+
+#divPrincipal{
+    text-align: center;
+    margin-top: 80px;
+}
+
+#divPrincipal div{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.divFormulario1{
+    width: 400px;
+    float: left;
+}
+
+.divFormulario2{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #887c74;
+}
+
+.divFormulario2 label{
+   display: flex;
+   flex-direction: column;
+   margin-left: 130px;
+   text-align: left;
+}
+
+label input, label select{
+    width: 400px;
+}
+
+.label div{
+    margin-top: 2px;
+}
+
+input[type="radio"]{
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    margin-bottom: 0;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+input[type="file"]{
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#divFoto{
+    float: left;
+    margin-top: 100px;
+}
+
+#divFoto img{
+    width: 300px;
+    border: 2px solid #746454;
+    border-radius: 15px;
+}
+
+h1 p{
+    display: inline-block;
+    color: #4a6d6b;
+}
+
+input{
+    margin-bottom: 10px;
+    width: 300px;
+    height: 22px;
+}
+
+#email{
+    color: #746454;
+    text-decoration: none;
+}
+
+#email :visited{
+    color: #887c74;
+    text-decoration: underline;
+}
+
+.submit{
+background-color: #4a6d6b;
+color: white;
+border-radius: 10px;
+width: 150px;
+height: 30px;
+}
+
+.a{
+    color: #705c50;
+    font-size: large;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+#idioma{
+    float: right;
+    margin-top: 5px;
+    color: #705c50;
+    font-size: large;
+    text-decoration: none;
+}
+
+footer{
+    background-color: white;
+    display: flex;
+    gap: 510px;
+    border-top: 2px solid #8c7d72;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.divFooter1{
+    border: 1px solid #8c7d72;
+    border-radius: 5px;
+    margin-left:20px;
+    background-color: #efedeb;
+}
+    
+.divFooter1 a{
+        padding: 6px;
+        color: #705c50;
+        font-size: large;
+        text-decoration: none;
+}
