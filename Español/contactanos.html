@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contactanos.css">
+    <link rel="stylesheet" href="/css/contactus.css">
     <title>Contactanos</title>
 </head>
 <body>
@@ -17,118 +17,293 @@
                         <div class="lineas"></div>
                         <div class="lineas"></div>
                     </div>  
-                    <span>Menú principal</span> 
+
+                    <span>
+                        Menú principal
+                    </span> 
                 </div>     
             </button>
+
             <div class="menuItem">
-            <a href="/Español/index.html">Inicio</a>
+                <a href="/Español/inicio.html">Inicio</a>
+                </div>
+                <div class="menuItem">
+                    <a href="/Español/adoptar.html">Adoptar un conejo</a>
+                </div>
             </div>
-            <div class="menuItem">
-                <a href="/Español/galeria.html">Galeria</a>
+
+            <div class="cabecera">
+                <h1>
+                    Cuidado del conejo: La Guía
+                </h1>
+
+                <img 
+                    id="img1" 
+                    src="/img/bunnyDrawing.png" 
+                    alt=""
+                >
             </div>
-        </div>
-        <div class="cabecera">
-            <h1>Cuidado del conejo: La Guía</h1>
-            <img id="img1" src="/img/bunnyDrawing.png" alt="">
-        </div>
-        <nav>
-            <a href="/English/contactus.html">English</a>
-        </nav>
-    </header>
-    <div id="divPrincipal">
-        <div class="divFormulario1">    
-            <h1>Contacta <p>con nosotros</p></h1>
-            <p>Vía email:</p>
-            <a id="email" href="rabbitcaretheguide@gmail.com">rabbitcaretheguide@gmail.com</a>
-            <h3>¿Tienes alguna pregunta?¡Escríbenos!</h3>
-            <form action="/" method="post">
-                <label>
-                    <input type="text" class="nombre" name="nombre" id="nombre" placeholder="Nombre completo *" required>
-                </label>
-                <label>
-                    <input type="tel" class="telefono" name="telefono" id="telefono" placeholder="Teléfono">
-                </label>
-                <label>
-                    <input type="email" class="email" name="email" id="email" placeholder="Dirección de email *" required>
-                </label>
-                <label>
-                    <input type="textarea" class="mensaje" name="mensaje" id="mensaje" placeholder="Tu mensaje..." required>
-                </label>
-                <label>
-                    <input type="submit" class="submit" value="Enviar un mensaje">
-                </label>
-            </form>
-        </div>
-        <div id="divFoto">
-                <img src="/img/hojas.png" alt="">
-        </div>
-        <div class="divFormulario2">
-            <h1>Formulario para dueños de conejos</h1>
-            <h2>Nos gustaría saber sobre tu conejo, ¡Déjanos saber aquí!</h2>
-            <form action="/" method="post">
-                <label for="nombre">Nombre del dueño
-                    <input type="text" name="nombre" class="nombre" id="nombre" required>
-                </label>
-                <label for="email">Email
-                    <input type="email" name="email" class="email" id="email" required>
-                </label>
-                <label for="nombreMascota">Nombre del conejo
-                    <input type="text" name="nombreMascota" class="nombreMascota" id="nombreMascota" required>
-                </label>
-                <label for="edad">Edad
-                    <select name="edad" id="edad">
-                        <option value="selecciona" selected>-selecciona-</option>
-                        <option value="-1">-1</option>
-                        <option value="1-5">1-5</option>
-                        <option value="6-10">6-9</option>
-                        <option value="10+">10+</option>
-                    </select>
-                </label>    
-                <label for="raza">Raza
-                    <input type="text" name="raza" class="raza" id="raza" required>
-                </label>
-                <label for="sexo" class="label">Sexo
-                    <div>
-                        <input type="radio" name="sexo" value="macho">
-                        <span>Macho</span>
-                    </div>
-                    <div>
-                        <input type="radio" name="sexo" value="hembra">
-                        <span>Hembra</span>   
-                    </div>              
-                </label>     
-                <label for="castracion" class="label">¿Está tu conejo/a castrado/esterilizada?
-                    <div>
-                        <input type="radio" name="castracion" value="si">
-                        <span>Si</span>
-                    </div>
-                    <div>
-                        <input type="radio" name="castracion" value="no">
-                        <span>No</span>   
-                    </div>              
-                </label>    
-                <label for="masDeUno">
-                    <span>Marca si tienes mas conejos
-                    <input type="checkbox">
-                    </span>
-                </label>
-                <label for="foto">Selecciona una foto:
-                <input type="file" id="foto" name="foto" accept="image/*">
-                </label>
-                <input type="submit" class="submit" name="enviar" id="enviar" value="Enviar">
-            </form>
-        </div>
-    </div> 
-    <footer>
-        <div class="divFooter1">
-            <a href="/English/contactus.html">Volver arriba</a>
-        </div>
-        <div>
-            <small>© 2024 Cuidado del conejo: La guía</small>
-        </div>
-        <div>
-            <a href="">Sobre nosotros</a>
+
+            <nav>
+                <a href="/English/contactus.html">
+                    English
+                </a>
+            </nav>
+       </header>
+
+        <div id="divPrincipal">
+            <div class="divFormulario1">    
+                <div class="Formulario">  
+                    <form class="form1" action="/" method="post">  
+                        <h1>
+                            Contacta 
+                        </h1>
+
+                        <h1 class="h1form">
+                            con nosotros
+                        </h1>
+
+                        <p>
+                            Vía email:
+                        </p>
+
+                        <a id="email" href="rabbitcaretheguide@gmail.com">
+                            rabbitcaretheguide@gmail.com
+                        </a>
+
+                        <h3>
+                            ¿Tienes alguna pregunta?¡Escríbenos!
+                        </h3>
+
+                        <label>
+                            <input 
+                                type="text" 
+                                class="nombre" 
+                                name="nombre" 
+                                id="nombre" 
+                                placeholder="Nombre completo *" 
+                                required
+                            >
+                        </label>
+                        <label>
+                            <input 
+                                type="tel" 
+                                class="telefono" 
+                                name="telefono" 
+                                id="telefono" 
+                                placeholder="Teléfono"
+                            >
+                        </label>
+                        <label>
+                            <input 
+                                type="email" 
+                                class="email" 
+                                name="email" 
+                                id="email" 
+                                placeholder="Dirección de email *" 
+                                required
+                            >
+                        </label>
+                        <label>
+                            <input 
+                                type="textarea" 
+                                class="mensaje" 
+                                name="mensaje" 
+                                id="mensaje" 
+                                placeholder="Tu mensaje..." 
+                                required
+                            >
+                        </label>
+                        <label>
+                            <input 
+                                type="submit" 
+                                class="submit" 
+                                value="Enviar un mensaje"
+                            >
+                        </label>
+                    </form>
+                </div>
+     
+
+                <div class="divFoto">
+                    <img 
+                        src="/img/hojas.png" 
+                        alt=""
+                    >
+                </div>
+            </div>
+            
+            <div class="divFormulario2">
+                <h1>
+                    Formulario para dueños de conejos
+                </h1>
+
+                <h2>
+                    Nos gustaría saber sobre tu conejo, ¡Déjanos saber aquí!
+                </h2>
+
+                <form action="/" method="post">
+                    <label for="nombre">
+                        Nombre del dueño
+
+                        <input 
+                            type="text" 
+                            name="nombre" 
+                            class="nombre" 
+                            id="nombre" 
+                            required
+                        >
+                    </label>
+
+                    <label for="email">
+                        Email
+
+                        <input 
+                            type="email" 
+                            name="email" 
+                            class="email" 
+                            id="email" 
+                            required
+                        >
+                    </label>
+
+                    <label for="nombreMascota">
+                        Nombre del conejo
+
+                        <input 
+                            type="text" 
+                            name="nombreMascota" 
+                            class="nombreMascota" 
+                            id="nombreMascota" 
+                            required
+                        >
+                    </label>
+
+                    <label for="edad">
+                        Edad
+                        
+                        <select name="edad" id="edad">
+                            <option value="selecciona" selected>-selecciona-</option>
+                            <option value="-1">-1</option>
+                            <option value="1-5">1-5</option>
+                            <option value="6-10">6-9</option>
+                            <option value="10+">10+</option>
+                        </select>
+                    </label>    
+
+                    <label for="raza">
+                        Raza
+
+                        <input type="text" name="raza" class="raza" id="raza" required>
+                    </label>
+
+                    <label for="sexo" class="label">
+                        Sexo
+
+                        <div>
+                            <input 
+                                type="radio" 
+                                name="sexo" 
+                                value="macho"
+                            >
+
+                            <span>
+                                Macho
+                            </span>
+                        </div>
+                        
+                        <div>
+                            <input 
+                                type="radio" 
+                                name="sexo" 
+                                value="hembra"
+                            >
+
+                            <span>
+                                Hembra
+                            </span>   
+                        </div>              
+                    </label>     
+
+                    <label for="castracion" class="label">
+                        ¿Está tu conejo/a castrado/esterilizada?
+
+                        <div>
+                            <input 
+                                type="radio" 
+                                name="castracion" 
+                                value="si"
+                            >
+
+                            <span>
+                                Si
+                            </span>
+                        </div>
+
+                        <div>
+                            <input 
+                                type="radio" 
+                                name="castracion" 
+                                value="no"
+                            >
+
+                            <span>
+                                No
+                            </span>   
+                        </div>              
+                    </label>   
+
+                    <label for="masDeUno">
+                        <span>
+                            Marca si tienes mas conejos
+
+                            <input type="checkbox">
+                        </span>
+                    </label>
+
+                    <label for="foto">
+                        Selecciona una foto:
+
+                        <input 
+                            type="file" 
+                            id="foto" 
+                            name="foto" 
+                            accept="image/*"
+                        >
+                    </label>
+
+                    <label>
+                        <input 
+                            type="submit" 
+                            class="submit" 
+                            name="enviar" 
+                            id="enviar" 
+                            value="Enviar">
+                    </label>
+                </form>
+            </div>
         </div> 
-    </footer>
+    
+
+        <footer>
+            <div class="divFooter1">
+                <a href="/English/contactus.html">
+                    Volver arriba
+                </a>
+            </div>
+
+            <div>
+                <small>
+                    © 2024 Cuidado del conejo: La guía
+                </small>
+            </div>
+
+            <div>
+                <a href="">
+                    Sobre nosotros
+                </a>
+            </div> 
+        </footer>
+
 </body>
 </html>

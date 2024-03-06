@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="/css/contactus.css">
     <title>Contact us</title>
 </head>
 <body>
@@ -36,46 +36,140 @@
         </nav>
     </header>
     <div id="divPrincipal">
-        <div class="divFormulario1">    
-            <h1>Contact <p>with us</p></h1>
-            <p>By email:</p>
-            <a id="email" href="rabbitcaretheguide@gmail.com">rabbitcaretheguide@gmail.com</a>
-            <h3>Have a question? Write to us!</h3>
-            <form action="/" method="post">
+        <div class="divFormulario1">  
+            <div class="Formulario">  
+                <form class="form1" action="/" method="post">   
+                    <h1>
+                        Contact
+                    </h1>
+
+                    
+                    <h1 class="h1form">
+                        with us
+                    </h1>
+
+                    <p>
+                        By email:
+                    </p>
+
+                    <a id="email" href="rabbitcaretheguide@gmail.com">
+                        rabbitcaretheguide@gmail.com                       
+                    </a>
+           
+                    <h3>
+                        Have a question? Write to us!
+                    </h3>
+
                 <label>
-                    <input type="text" class="nombre" name="nombre" id="nombre" placeholder="Full name *" required>
+                    <input 
+                        type="text" 
+                        class="nombre" 
+                        name="nombre" 
+                        id="nombre" 
+                        placeholder="Full name *" 
+                        required
+                    >
                 </label>
+                
                 <label>
-                    <input type="tel" class="telefono" name="telefono" id="telefono" placeholder="Phone">
+                    <input 
+                        type="tel" 
+                        class="telefono" 
+                        name="telefono" 
+                        id="telefono" 
+                        placeholder="Phone"
+                    >
                 </label>
+               
                 <label>
-                    <input type="email" class="email" name="email" id="email" placeholder="Email adress *" required>
+                    <input 
+                        type="email" 
+                        class="email" 
+                        name="email" 
+                        id="email" 
+                        placeholder="Email adress *" 
+                        required
+                    >
                 </label>
+                
                 <label>
-                    <input type="textarea" class="mensaje" name="mensaje" id="mensaje" placeholder="Your message..." required>
+                    <input 
+                        type="textarea" 
+                        class="mensaje" 
+                        name="mensaje" 
+                        id="mensaje" 
+                        placeholder="Your message..." 
+                        required
+                    >
                 </label>
+              
                 <label>
-                    <input type="submit" class="submit" value="Send a message">
+                    <input 
+                        type="submit" 
+                        class="submit" 
+                        value="Send a message"
+                    >
                 </label>
             </form>
         </div>
-        <div id="divFoto">
-                <img src="/img/hojas.png" alt="">
+        
+            <div class="divFoto">
+                <img 
+                    src="/img/hojas.png" 
+                    alt=""
+                >
+            </div>
         </div>
+
         <div class="divFormulario2">
-            <h1>Bunny owner form</h1>
-            <h2>We'll like to hear about your bunny, let us now here!</h2>
+            <h1>
+                Bunny owner form
+            </h1>
+
+            <h2>
+                We'll like to hear about your bunny, let us now here!
+            </h2>
+
             <form action="/" method="post">
-                <label for="nombre">Owner's Name
-                    <input type="text" name="nombre" class="nombre" id="nombre" required>
+                <label for="nombre">
+                    Owner's Name
+                    
+                    <input 
+                        type="text" 
+                        name="nombre" 
+                        class="nombre" 
+                        id="nombre" 
+                        required
+                    >
                 </label>
-                <label for="email">Email
-                    <input type="email" name="email" class="email" id="email" required>
+                
+                <label for="email">
+                    Email
+                    
+                    <input 
+                        type="email" 
+                        name="email" 
+                        class="email" 
+                        id="email" 
+                        required
+                    >
                 </label>
-                <label for="nombreMascota">Bunny's name
-                    <input type="text" name="nombreMascota" class="nombreMascota" id="nombreMascota" required>
+               
+                <label for="nombreMascota">
+                    Bunny's name
+                    
+                    <input 
+                        type="text" 
+                        name="nombreMascota" 
+                        class="nombreMascota" 
+                        id="nombreMascota" 
+                        required
+                    >
                 </label>
-                <label for="edad">Age
+                
+                <label for="edad">
+                    Age
+                    
                     <select name="edad" id="edad">
                         <option value="selecciona" selected>-select-</option>
                         <option value="-1">-1</option>
@@ -84,50 +178,123 @@
                         <option value="10+">10+</option>
                     </select>
                 </label>    
-                <label for="raza">Breed
-                    <input type="text" name="raza" class="raza" id="raza" required>
+                
+                <label for="raza">
+                    Breed
+                   
+                    <input 
+                        type="text" 
+                        name="raza" 
+                        class="raza" 
+                        id="raza" 
+                        required
+                    >
                 </label>
-                <label for="sexo" class="label">Sex
+                
+                <label for="sexo" class="label">
+                    Sex
+                    
                     <div>
-                        <input type="radio" name="sexo" value="macho">
-                        <span>Male</span>
+                        <input 
+                            type="radio" 
+                            name="sexo" 
+                            value="macho"
+                        >
+                       
+                        <span>
+                            Male
+                        </span>
                     </div>
+
                     <div>
-                        <input type="radio" name="sexo" value="hembra">
-                        <span>Female</span>   
+                        <input 
+                            type="radio" 
+                            name="sexo" 
+                            value="hembra"
+                        >
+                        
+                        <span>
+                            Female
+                        </span>   
                     </div>              
                 </label>     
-                <label for="castracion" class="label">Is your bunny spayed/neutered?
+                
+                <label for="castracion" class="label">
+                    Is your bunny spayed/neutered?
+                    
                     <div>
-                        <input type="radio" name="castracion" value="si">
-                        <span>Yes</span>
+                        <input 
+                            type="radio" 
+                            name="castracion" 
+                            value="si"
+                        >
+
+                        <span>
+                            Yes
+                        </span>
                     </div>
+                    
                     <div>
-                        <input type="radio" name="castracion" value="no">
-                        <span>No</span>   
+                        <input 
+                            type="radio" 
+                            name="castracion" 
+                            value="no"
+                        >
+
+                        <span>
+                            No
+                        </span>   
                     </div>              
                 </label>    
+               
                 <label for="masDeUno">
-                    <span>Mark if you own more bunnies
-                    <input type="checkbox">
+                    <span>
+                        Mark if you own more bunnies
+                    
+                        <input type="checkbox">
                     </span>
                 </label>
-                <label for="foto">Select a picture:
-                <input type="file" id="foto" name="foto" accept="image/*">
+                <label for="foto">
+                    Select a picture:
+                
+                    <input 
+                        type="file" 
+                        id="foto" 
+                        name="foto" 
+                        accept="image/*"
+                    >
                 </label>
-                <input type="submit" class="submit" name="enviar" id="enviar" value="Submit">
+                
+                <label>
+                    <input 
+                        type="submit" 
+                        class="submit" 
+                        name="enviar" 
+                        id="enviar" 
+                        value="Submit"
+                    >
+                </label>    
             </form>
         </div>
     </div> 
+    
     <footer>
         <div class="divFooter1">
-            <a href="/English/contactus.html">Back to top</a>
+            <a href="/English/contactus.html">
+                Back to top
+            </a>
         </div>
+
         <div>
-            <small>© 2024 Rabbit care: The Guide</small>
+            <small>
+                © 2024 Rabbit care: The Guide
+            </small>
         </div>
+       
         <div>
-            <a href="">About us</a>
+            <a href="">
+                About us
+            </a>
         </div> 
     </footer>
 </body>

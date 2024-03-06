@@ -10,25 +10,26 @@ html{
 body{
     padding: 0;
     margin: 0;
-    background-color: #a4baa6;
+    background-color: #98c1a4;
 }
 
 header{
     background-color: white;
     display: flex;
     position: fixed;
-    gap: 380px;
+    justify-content: space-between;
     border-bottom: 2px solid #8c7d72;
     width: 100%;
     height: 80px;
     top: 0;
+    padding: 8px;
     align-items: center;
+    z-index: 3;
 }
 
 .boton{
     height: 37.6px;
     overflow: hidden;
-    margin-left: 20px;
 }
 
 .boton:hover{
@@ -43,16 +44,10 @@ button{
     background-color: #efedeb;
 }
 
-menu{
-    cursor:pointer;
-    display: block;
-}
-
 .menu{
     display: flex;
     align-items: center;
     gap: 10px;
-  
 }
 
 .menu:focus{
@@ -66,11 +61,6 @@ menu{
     margin-top: 2px;
 }
 
-.menuItem{
-   text-align: center; 
-   border: 1px solid #8c7d72;
-}
-
 .cabecera{
     display: flex;
 }
@@ -79,6 +69,13 @@ menu{
     margin-top: 6px;
     width: 70px;
     height: 70px;
+}
+
+.menuItem{
+    text-align: center; 
+    border: 1px solid #8c7d72;
+    background-color: #efedeb;
+    border-radius: 2px;
 }
 
 .menuItem a{
@@ -103,84 +100,92 @@ nav a{
 }
 
 #divPrincipal{
-    text-align: center;
-    margin-top: 80px;
-}
-
-#divPrincipal div{
-    margin-left: 20px;
-    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+    margin-top: 12vh;
 }
 
 .divFormulario1{
-    width: 400px;
-    float: left;
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.divFormulario1 label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form1{
+    width: 30vw;
+    text-align: center;
+}
+
+form h1{
+    display: inline-block; 
+}
+
+.h1form{
+    color: #4a6d6b;
+}
+
+.divFoto{
+    width: 20vw;
+}
+
+.divFoto img{
+    max-width: 15vw;
+    border: 2px solid #746454;
+    border-radius: 15px;
 }
 
 .divFormulario2{
-    display: flex;
-    flex-direction: column;
     border-left: 1px solid #887c74;
+    width: 45vw;
+    padding-left: 4rem;
+}
+
+.divFormulario2 h1, .divFormulario2 h2{
+    text-align: center;
 }
 
 .divFormulario2 label{
    display: flex;
    flex-direction: column;
-   margin-left: 130px;
-   text-align: left;
 }
 
 label input, label select{
-    width: 400px;
-}
-
-.label div{
-    margin-top: 2px;
+    width: 25vw;
 }
 
 input[type="radio"]{
     cursor: pointer;
-    width: 18px;
+    width: 1vw;
     height: 18px;
     border: 2px solid #333;
-    border-radius: 50%;
-    margin-bottom: 0;
 }
 
 input[type="checkbox"]{
     cursor: pointer;
-    width: 18px;
+    width: 1vw;
     height: 18px;
     border: 2px solid #333;
-    border-radius: 50%;
-    margin-bottom: 10px;
 }
 
 input[type="file"]{
     cursor: pointer;
-    margin-top: 5px;
-}
-
-#divFoto{
-    float: left;
-    margin-top: 100px;
-}
-
-#divFoto img{
-    width: 300px;
-    border: 2px solid #746454;
-    border-radius: 15px;
-}
-
-h1 p{
-    display: inline-block;
-    color: #4a6d6b;
+   
 }
 
 input{
-    margin-bottom: 10px;
-    width: 300px;
-    height: 22px;
+    padding: 0.5vh;
+    margin: 0.2rem;
 }
 
 #email{
@@ -194,23 +199,14 @@ input{
 }
 
 .submit{
-background-color: #4a6d6b;
-color: white;
-border-radius: 10px;
-width: 150px;
-height: 30px;
+    background-color: #4a6d6b;
+    color: white;
+    border-radius: 10px;
+    width: 10vw;
+    height: 4.5vh;
 }
 
 .a{
-    color: #705c50;
-    font-size: large;
-    text-decoration: none;
-    margin-top: 5px;
-}
-
-#idioma{
-    float: right;
-    margin-top: 5px;
     color: #705c50;
     font-size: large;
     text-decoration: none;
@@ -219,25 +215,66 @@ height: 30px;
 footer{
     background-color: white;
     display: flex;
-    gap: 510px;
     border-top: 2px solid #8c7d72;
     width: 100%;
-    height: 60px;
+    height: 50px;
     bottom: 0;
     margin-top: 40px;
+    justify-content: space-between;
+    padding: 8px;
     align-items: center;
 }
 
 .divFooter1{
     border: 1px solid #8c7d72;
     border-radius: 5px;
-    margin-left:20px;
+    height: 25px;
     background-color: #efedeb;
 }
     
 .divFooter1 a{
-        padding: 6px;
-        color: #705c50;
-        font-size: large;
-        text-decoration: none;
+    padding: 6px;
+    color: #705c50;
+    font-size: large;
+    text-decoration: none;
 }
+
+/*****************tablet*********************************************************/
+@media only screen and (max-width: 1300px) {
+   
+   }
+@media only screen and (max-width: 1000px) {
+    header .cabecera{
+       display: none;
+    }
+   }
+/*****************mobile*********************************************************/
+@media only screen and (max-width: 600px) {
+      .divPrincipal{
+        display: flex;
+        flex-direction: row;
+      }
+    
+    .divFormulario1{
+       display: grid;
+       width: 100vw; 
+    }
+
+    .form1{
+        width: 100vw;
+    }
+
+    .divFormulario2{
+        border: none;
+        width: 100vw;
+    }
+
+    .divFoto{
+       position: fixed;
+       top: 5rem;
+       right:-1.5rem;
+    }
+    
+ }
+
+ 

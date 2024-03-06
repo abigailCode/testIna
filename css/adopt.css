@@ -10,25 +10,26 @@ html{
 body{
     padding: 0;
     margin: 0;
-    background-color: #d3def4;
+    background-color: #d0e7ec;
 }
 
 header{
     background-color: white;
     display: flex;
     position: fixed;
-    gap: 380px;
+    justify-content: space-between;
     border-bottom: 2px solid #8c7d72;
     width: 100%;
     height: 80px;
     top: 0;
+    padding: 8px;
     align-items: center;
+    z-index: 3;
 }
 
 .boton{
     height: 37.6px;
     overflow: hidden;
-    margin-left: 20px;
 }
 
 .boton:hover{
@@ -66,11 +67,6 @@ menu{
     margin-top: 2px;
 }
 
-.menuItem{
-   text-align: center; 
-   border: 1px solid #8c7d72;
-}
-
 .cabecera{
     display: flex;
 }
@@ -79,6 +75,13 @@ menu{
     margin-top: 6px;
     width: 70px;
     height: 70px;
+}
+
+.menuItem{
+    text-align: center; 
+    border: 1px solid #8c7d72;
+    background-color: #efedeb;
+    border-radius: 2px;
 }
 
 .menuItem a{
@@ -113,12 +116,14 @@ main{
     top: 180px;
     width: 100%;
     background-color: #d5d0d0;
+    border: 1px solid #ccbfb6;
+    border-radius: 5px;
 }
 
 .imagen{
     cursor: pointer;
-    width: 200px;
-    height: 250px;
+    max-width: 200px;
+    max-height: 250px;
 }
 
 .imagen img{
@@ -169,7 +174,7 @@ main{
     top: 0;
     left: 0;
     width: 100%;
-    height: 400px;
+    height: 400vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
@@ -191,32 +196,59 @@ hr{
 article{
     display: grid;
     grid-template-columns: 150px 350px 800px;
-    gap: 60px;
+    justify-content: space-between;
     margin: 40px;
+    font-size: 1vw;
 }
 
 footer{
     background-color: white;
     display: flex;
-    gap: 510px;
     border-top: 2px solid #8c7d72;
     width: 100%;
-    height: 60px;
+    height: 50px;
     bottom: 0;
     margin-top: 40px;
+    justify-content: space-between;
+    padding: 8px;
     align-items: center;
 }
 
 .divFooter1{
     border: 1px solid #8c7d72;
     border-radius: 5px;
-    margin-left:20px;
+    height: 25px;
     background-color: #efedeb;
 }
     
 .divFooter1 a{
-        padding: 6px;
-        color: #705c50;
-        font-size: large;
-        text-decoration: none;
+    padding: 6px;
+    color: #705c50;
+    font-size: large;
+    text-decoration: none;
+}
+
+/*****************tablet*********************************************************/
+@media only screen and (max-width: 1300px) {
+
+   }
+@media only screen and (max-width: 1000px) {
+    header .cabecera{
+       display: none;
+    }
+    main{
+        width: 50%;
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    article{
+        
+    }
+   }
+
+/*****************mobile*********************************************************/
+@media only screen and (max-width: 600px) {
+
 }

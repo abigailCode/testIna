@@ -17,18 +17,19 @@ header{
     background-color: white;
     display: flex;
     position: fixed;
-    gap: 425px;
+    justify-content: space-between;
     border-bottom: 2px solid #8c7d72;
     width: 100%;
     height: 80px;
     top: 0;
+    padding: 8px;
     align-items: center;
+    z-index: 3;
 }
 
 .boton{
     height: 37.6px;
     overflow: hidden;
-    margin-left: 20px;
 }
 
 .boton:hover{
@@ -66,11 +67,6 @@ menu{
     margin-top: 2px;
 }
 
-.menuItem{
-   text-align: center; 
-   border: 1px solid #8c7d72;
-}
-
 .cabecera{
     display: flex;
 }
@@ -81,17 +77,11 @@ menu{
     height: 70px;
 }
 
-.imagen-container {
-    position: fixed;
-    overflow: hidden;
-    background-color: white;
-    border: 2px solid #8c7d72;
-    border-radius: 20px;
-    width: 250px;
-    height: 400px;
-    left:1180px ;
-    top: 165px;
-    text-align: center;
+.menuItem{
+    text-align: center; 
+    border: 1px solid #8c7d72;
+    background-color: #efedeb;
+    border-radius: 2px;
 }
 
 .menuItem a{
@@ -115,20 +105,23 @@ nav a{
     text-decoration: none;
 }
 
-aside h2{
-    margin-top: 200px;
-}
 
+.aside-container{
+    border-left: 2px solid #8c7d72;
+    padding-left: 50px;
+    padding: 20px 0 20px 50px;
+    margin-bottom: 50px;
+    margin-top: 2em;
+}
 .imagen-container {
-    position: fixed;
+    
+    position: relative;
     overflow: hidden;
     background-color: white;
     border: 2px solid #8c7d72;
     border-radius: 20px;
     width: 250px;
     height: 400px;
-    left:1180px ;
-    top: 165px;
     text-align: center;
 }
 
@@ -159,13 +152,22 @@ aside h2{
     opacity: 1; /* Al pasar el ratón, la imagen hover se vuelve visible */
 }
 
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    align-items: start;
+    margin-top: 120px;
+}
+
 main{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 120px;
-    margin-left: 80px;
-    width: 990px;
-    border-right: 2px solid #8c7d72;
+    justify-content: center;
+    max-width: 990px;
+    padding-bottom: 50px;
+    border-bottom:2px solid #8c7d72;
     
 }
 
@@ -199,52 +201,114 @@ hr{
     height: 3px;
 }
 
-section{
-    width: 800px;
-    margin-left: 120px;
+.fieldset-container{
+    width: 100%;
+    display: flex;
+    margin-top: 2em;
+    justify-content: center;
 }
 
-section fieldset{
+.fieldset-container fieldset{
     border-radius: 15px;
 }
 
-section fieldset legend{
+.fieldset-container fieldset legend{
     font-size: xx-large;
     font-weight: bold;
 }
 
-section fieldset details summary{
+.fieldset-container fieldset details summary{
     font-size: large;
     font-weight: 600;
 }
 
-section fieldset details p{
+.fieldset-container fieldset details p{
     font-size: medium;
     margin-left: 20px;
 }
 
+.paw-container{
+    position: fixed;
+    bottom:55px;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+}
+
+.paw-container p{
+ display: none;
+}
+
+.paw-container:hover{
+    background-color: #fff;
+    border-radius: 15px;
+    width: 320px;
+    display: flex;
+    align-items: center;
+}
+
+.paw-container:hover p{
+    display: block;
+    margin-left: 10px;
+}
+
+.paw-image{
+    width: 80px;
+    height: 80px;
+}
+
+.paw-image img{
+    height: 100%;
+    filter: drop-shadow(0px 0px 4px #38383d);
+}
+
+
 footer{
     background-color: white;
     display: flex;
-    gap: 550px;
     border-top: 2px solid #8c7d72;
     width: 100%;
-    height: 60px;
+    height: 50px;
     bottom: 0;
     margin-top: 40px;
+    justify-content: space-between;
+    padding: 8px;
     align-items: center;
 }
 
 .divFooter1{
     border: 1px solid #8c7d72;
     border-radius: 5px;
-    margin-left:20px;
+    height: 25px;
     background-color: #efedeb;
 }
     
 .divFooter1 a{
-        padding: 6px;
-        color: #705c50;
-        font-size: large;
-        text-decoration: none;
+    padding: 6px;
+    color: #705c50;
+    font-size: large;
+    text-decoration: none;
+}
+
+
+/*****************tablet*********************************************************/
+@media only screen and (max-width: 1300px) {
+    .aside-container{
+       border: none;
+    }
+   }
+@media only screen and (max-width: 1000px) {
+    header .cabecera{
+       display: none;
+    }
+   }
+/*****************mobile*********************************************************/
+@media only screen and (max-width: 600px) {
+ .paw-container{
+    display: none;
+ }
+
+ .aside-container{
+    padding: 0;
+ }
 }
