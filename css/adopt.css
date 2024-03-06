@@ -127,7 +127,6 @@ main{
 }
 
 .imagen img{
-    display: inline-block;
     width: 200px; 
     height: 250px;
 }
@@ -156,13 +155,9 @@ main{
     display: block;
 }
 
-.contenedorImagen:hover{
-    display: none;
-}
-
 .seccion-con-fondo {
     margin-top: 50px;
-    height: 400px; 
+    height: 60vh; 
     background: url('/img/canarionejos.jpg') center/cover no-repeat;
     align-items: center;
     justify-content: center;
@@ -180,7 +175,7 @@ main{
 
 .seccion-con-fondo h1, .seccion-con-fondo p{
     z-index: 1;
-    font-size: xx-large;
+    font-size: 2vw;
     font-weight: bold;
     padding: 50px;
 }
@@ -236,16 +231,28 @@ footer{
     header .cabecera{
        display: none;
     }
+
     main{
-        width: 50%;
-        display: grid;
+        width: 60%;
+        height: 200vh;
         grid-template-columns: 200px 200px 200px;
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: 250px 250px 250px;
+        justify-content: start;
     }
 
     article{
-        
+        grid-template-columns: auto;
+        grid-template-rows: 60px 80px 120px;
+        text-align: center;
     }
+
+    .hover-content{
+        top: 670px;
+        left: 300px;
+    }
+
+    
+
    }
 
 /*****************mobile*********************************************************/
