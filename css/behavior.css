@@ -9,7 +9,7 @@ html{
 
 body{
     padding: 0;
-    margin: 0;
+    margin: 100px 0 0 0;
     background-color: #ebd9d1;
 }
 
@@ -62,7 +62,6 @@ menu{
 
 .lineas{
     width: 20px;
-  
     height: 2px;
     background-color: black;
     margin-top: 2px;
@@ -110,11 +109,11 @@ main{
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
     width: 80%;
-    margin-top: 100px;
     align-items: center;
+    margin: auto;
 }
 
-main img{
+main div img{
     max-width: 300px;
     max-height: 300px;
 }
@@ -126,10 +125,7 @@ section{
     border-top: 1px solid #8c7d72;
     justify-content: center;
     align-items: center;
-}
-
-section div{
-    
+    margin: auto;
 }
 
 section div img{
@@ -171,12 +167,22 @@ footer{
 
 /*****************tablet*********************************************************/
 @media only screen and (max-width: 1300px) {
-    .aside-container{
-       border: none;
-    }
+ 
    }
 @media only screen and (max-width: 1000px) {
- 
+    header .cabecera{
+        display: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section{
+        display: flex;
+        flex-direction: column;
+    }
    }
 /*****************mobile*********************************************************/
 @media only screen and (max-width: 600px) {

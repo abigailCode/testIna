@@ -296,12 +296,12 @@ footer{
     .aside-container{
        border: none;
     }
-   }
+}
 @media only screen and (max-width: 1000px) {
     header .cabecera{
        display: none;
     }
-   }
+}
 /*****************mobile*********************************************************/
 @media only screen and (max-width: 600px) {
  .paw-container{

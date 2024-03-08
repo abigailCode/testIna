@@ -233,11 +233,9 @@ footer{
     }
 
     main{
-        width: 60%;
-        height: 200vh;
         grid-template-columns: 200px 200px 200px;
         grid-template-rows: 250px 250px 250px;
-        justify-content: start;
+        justify-content: right;
     }
 
     article{
@@ -247,8 +245,8 @@ footer{
     }
 
     .hover-content{
-        top: 670px;
-        left: 300px;
+        top: 400px;
+        left: 0px;
     }
 
     
@@ -257,5 +255,23 @@ footer{
 
 /*****************mobile*********************************************************/
 @media only screen and (max-width: 600px) {
+
+
+    main{
+        width: fit-content;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 250px 250px 250px;
+        justify-content: start;
+        margin: auto;
+    }
+
+    .imagen{
+        cursor: default;
+    }
+
+    .imagen:hover .hover-content {
+        display: none;
+    }
+
 
 }

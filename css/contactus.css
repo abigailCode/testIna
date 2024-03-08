@@ -242,11 +242,16 @@ footer{
 /*****************tablet*********************************************************/
 @media only screen and (max-width: 1300px) {
    
-   }
+}
 @media only screen and (max-width: 1000px) {
     header .cabecera{
        display: none;
     }
+
+    label{
+        align-items: center;
+    }
+
    }
 /*****************mobile*********************************************************/
 @media only screen and (max-width: 600px) {
