@@ -5,12 +5,13 @@
 html{
     margin: 0;
     padding: 0;
+    font-family: fantasy;
 }
 
 body{
     padding: 0;
-    margin: 0;
-    background-color: #ebd9d1;
+    margin: 100px 0 0 0;
+    background-color: #e8d8f3;
 }
 
 header{
@@ -29,6 +30,7 @@ header{
 
 .boton{
     height: 37.6px;
+    width: 170px;
     overflow: hidden;
 }
 
@@ -66,7 +68,6 @@ menu{
     background-color: black;
     margin-top: 2px;
 }
-
 .cabecera{
     display: flex;
 }
@@ -91,6 +92,11 @@ menu{
     margin-top: 5px;
 }
 
+.menuItem a:hover{
+    transition: font-size 0.3s ease;
+    font-size: 20px;
+}
+
 nav{
     border: 1px solid #8c7d72;
     border-radius: 5px;
@@ -105,13 +111,32 @@ nav a{
     text-decoration: none;
 }
 
+main{
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
 
+section{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 900px auto;
+    border-top: 1px solid #8c7d72;
+    align-items: center;
+    margin: auto;
+}
 
+section div img{
+    max-width: 300px;
+    max-height: 300px;
+    margin: 2rem 2rem 2rem 0;
+}
 
-
-
-
-
+main img, section img{
+    border: 1px solid #8c7d72;
+    border-radius: 15px;
+}
 
 footer{
     background-color: white;
@@ -139,3 +164,30 @@ footer{
     font-size: large;
     text-decoration: none;
 }
+
+.divFooter2 a{
+    color: #38383d;
+    text-decoration: none;
+}
+
+.divFooter2 a:visited{
+    color: #76655a;
+    text-decoration: underline;
+}
+
+/*****************tablet*********************************************************/
+@media only screen and (max-width: 1100px) {
+    header .cabecera{
+        display: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+   }

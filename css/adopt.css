@@ -5,6 +5,7 @@
 html{
     margin: 0;
     padding: 0;
+    font-family: fantasy;
 }
 
 body{
@@ -29,6 +30,7 @@ header{
 
 .boton{
     height: 37.6px;
+    width: 170px;
     overflow: hidden;
 }
 
@@ -91,6 +93,11 @@ menu{
     margin-top: 5px;
 }
 
+.menuItem a:hover{
+    transition: font-size 0.3s ease;
+    font-size: 20px;
+}
+
 nav{
     border: 1px solid #8c7d72;
     border-radius: 5px;
@@ -106,8 +113,8 @@ nav a{
 }
 
 .titulo{
-    margin-top: 110px;
-    margin-left: 200px;
+    margin: 6rem auto 2rem auto;
+    text-align: center;
 }
 
 main{
@@ -134,7 +141,7 @@ main{
 .hover-content{
     display: none;
     position: absolute;
-    top: 200px;
+    top: 180px;
     left: 950px;
     margin-right: 50px;
     text-align: center;
@@ -223,11 +230,18 @@ footer{
     text-decoration: none;
 }
 
-/*****************tablet*********************************************************/
-@media only screen and (max-width: 1300px) {
+.divFooter2 a{
+    color: #38383d;
+    text-decoration: none;
+}
 
-   }
-@media only screen and (max-width: 1000px) {
+.divFooter2 a:visited{
+    color: #76655a;
+    text-decoration: underline;
+}
+
+/*****************tablet*********************************************************/
+@media only screen and (max-width: 1100px) {
     header .cabecera{
        display: none;
     }
@@ -249,8 +263,13 @@ footer{
         left: 0px;
     }
 
-    
+    .imagen{
+        cursor: default;
+    }
 
+    .imagen:hover .hover-content {
+        display: none;
+    }   
    }
 
 /*****************mobile*********************************************************/
@@ -268,10 +287,4 @@ footer{
     .imagen{
         cursor: default;
     }
-
-    .imagen:hover .hover-content {
-        display: none;
-    }
-
-
 }

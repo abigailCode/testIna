@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    height: 60%;
+    font-family: fantasy;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #ebd9d1;
+    height: 100%;
+    position: relative;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    border-bottom: 2px solid #8c7d72;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    padding: 8px;
+    align-items: center;
+    z-index: 3;
+}
+
+.cabecera{
+    display: flex;
+    margin: auto;
+}
+
+#img1{
+    width: 70px;
+    height: 70px;
+}
+
+.main-container{
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 40vh;
+}
+
+.main-container div{
+    display: inline-block;
+}
+
+.main-container div a button{
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #c6c5c3;
+    border-radius: 5px;
+    filter: drop-shadow(0px 3px 4px #8d8d93);
+}
+
+.paw-container{
+    position: fixed;
+    bottom:55px;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+}
+
+.paw-container p{
+    display: none;
+}
+
+.paw-container:hover{
+    background-color: #fff;
+    border-radius: 15px;
+    width: 320px;
+    display: flex;
+    align-items: center;
+}
+
+.paw-container:hover p{
+    display: block;
+    margin-left: 10px;
+}
+
+.paw-image{
+    width: 80px;
+    height: 80px;
+}
+
+.paw-image img{
+    height: 100%;
+    filter: drop-shadow(0px 0px 4px #38383d);
+}
+
+footer{
+    background-color: white;
+    display: flex;
+    border-top: 2px solid #8c7d72;
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+    position: absolute;
+    bottom:0;
+}
+
+.divFooter1{
+    border: 1px solid #8c7d72;
+    border-radius: 5px;
+    height: 25px;
+    background-color: #efedeb;
+}
+    
+.divFooter1 a{
+    padding: 6px;
+    color: #705c50;
+    font-size: large;
+    text-decoration: none;
+}
+
+.divFooter2 a{
+    color: #38383d;
+    text-decoration: none;
+}
+
+.divFooter2 a:visited{
+    color: #76655a;
+    text-decoration: underline;
+}
+
+/*****************tablet*********************************************************/
+@media only screen and (max-width: 1100px) {
+    header .cabecera{
+       display: none;
+    }   
+}
